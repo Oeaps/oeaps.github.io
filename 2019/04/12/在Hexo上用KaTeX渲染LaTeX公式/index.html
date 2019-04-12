@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Aias&#39;s Depot">
 <meta property="og:description" content="&amp;#x5148;&amp;#x6765;&amp;#x770B;&amp;#x4E0B;&amp;#x6548;&amp;#x679C;&amp;#xFF1A; &amp;#x8FD9;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x884C;&amp;#x5185;&amp;#x516C;&amp;#x5F0F;: x2+y2=z2x^2+y^2=z^2x2+y2=z2 &amp;#xFF0C;&amp;#x4E0B;&amp;#x9762;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-12T16:00:53.778Z">
+<meta property="og:updated_time" content="2019-04-12T16:06:11.252Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Hexo上用KaTeX渲染LaTeX数学公式">
 <meta name="twitter:description" content="&amp;#x5148;&amp;#x6765;&amp;#x770B;&amp;#x4E0B;&amp;#x6548;&amp;#x679C;&amp;#xFF1A; &amp;#x8FD9;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x884C;&amp;#x5185;&amp;#x516C;&amp;#x5F0F;: x2+y2=z2x^2+y^2=z^2x2+y2=z2 &amp;#xFF0C;&amp;#x4E0B;&amp;#x9762;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;">
@@ -184,11 +184,11 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
 <p>&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;&#x65B9;&#x6CD5;&#xFF1A;</p>
 <p>&#x9996;&#x5148;&#x9700;&#x8981;&#x5B89;&#x88C5; <a href="http://pandoc.org/installing.html" target="_blank" rel="noopener">Pandoc</a><br>
 &#x7136;&#x540E;&#x5C06;Pandoc&#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#xFF08;&#x7ED9;&#x6240;&#x6709;&#x7528;&#x6237;&#x5B89;&#x88C5;&#x7684;&#x8BDD;&#x9ED8;&#x8BA4;&#x662F;<code>C:\Program Files\Pandoc</code>&#xFF09;&#x52A0;&#x5165;&#x5230;Windows&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x91CC;&#xFF0C;&#x5E76;&#x91CD;&#x542F;&#x3002;</p>
-<p>&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x4F60;&#x7684;Hexo&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6253;&#x5F00;Bash&#xFF0C;&#x5B89;&#x88C5;<a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">hexo-renderer-pandoc</a>&#x548C;<a href="https://github.com/thcd/hexo-katex" target="_blank" rel="noopener">hexo-katex</a>&#xFF1A;<br>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pandoc --save</span><br><span class="line">npm install hexo-katex --save</span><br></pre></td></tr></table></figure></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x4F60;&#x7684;Hexo&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6253;&#x5F00;Bash&#xFF0C;&#x5378;&#x8F7D;&#x6389;&#x9ED8;&#x8BA4;&#x7684;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x5E76;&#x5B89;&#x88C5;<a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">hexo-renderer-pandoc</a>&#x548C;<a href="https://github.com/thcd/hexo-katex" target="_blank" rel="noopener">hexo-katex</a>&#xFF1A;<br>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br><span class="line">npm install hexo-katex --save</span><br></pre></td></tr></table></figure></p>
 <p>&#x7136;&#x540E;&#x5728;Hexo&#x6839;&#x76EE;&#x5F55;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>_config.yml</code>&#x91CC;&#x52A0;&#x5165;&#xFF1A;<br>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pandoc:</span></span><br><span class="line"><span class="attr">  mathEngine:</span> <span class="string">katex</span></span><br><span class="line"></span><br><span class="line"><span class="attr">katex:</span></span><br><span class="line"><span class="attr">  throw_on_error:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
-<p>&#x6700;&#x540E;&#x8BA9;Hexo&#x91CD;&#x65B0;&#x751F;&#x6210;&#x5E76;&#x90E8;&#x7F72;&#x5373;&#x53EF;&#xFF1A; <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<p>&#x6700;&#x540E;&#x8BA9;Hexo&#x91CD;&#x65B0;&#x751F;&#x6210;&#x5E76;&#x90E8;&#x7F72;&#x5373;&#x53EF;&#xFF1A; <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -437,26 +437,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">KaTeX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">LaTeX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">公式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Pandoc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
@@ -474,6 +454,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">KaTeX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">LaTeX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">公式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Pandoc</a>
               </li>
             
             <div class="clearfix"></div>
