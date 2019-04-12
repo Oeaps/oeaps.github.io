@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://Oeaps.github.com">
+
   <title>用Python读取和保存16bit图片 | Aias&#39;s Depot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。   安装：1pip install imageio 使用：12345from imageio import imread, imsaveimport numpy as npimg = imread(&apos;pic.tif&apos;).astype(np.uint16)imsave(&apos;16bit.tif&apos;) 使用matlab也可以正">
+  <meta name="description" content="最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。 安装： 1pip install imageio 使用： 12345from imageio import imread, imsaveimport numpy as npimg = imread(&apos;pic.tif&apos;).astype(np.uint16)imsave(&apos;16bit.tif&apos;) 使用matlab也可以正">
 <meta name="keywords" content="Python,imageio,10bit,16bit,MATLAB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Python读取和保存16bit图片">
 <meta property="og:url" content="http://Oeaps.github.com/2019/04/06/用Python读取和保存16bit图片/index.html">
 <meta property="og:site_name" content="Aias&#39;s Depot">
-<meta property="og:description" content="最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。   安装：1pip install imageio 使用：12345from imageio import imread, imsaveimport numpy as npimg = imread(&apos;pic.tif&apos;).astype(np.uint16)imsave(&apos;16bit.tif&apos;) 使用matlab也可以正">
+<meta property="og:description" content="最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。 安装： 1pip install imageio 使用： 12345from imageio import imread, imsaveimport numpy as npimg = imread(&apos;pic.tif&apos;).astype(np.uint16)imsave(&apos;16bit.tif&apos;) 使用matlab也可以正">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2019-04-05T18:51:12.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Python读取和保存16bit图片">
-<meta name="twitter:description" content="最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。   安装：1pip install imageio 使用：12345from imageio import imread, imsaveimport numpy as npimg = imread(&apos;pic.tif&apos;).astype(np.uint16)imsave(&apos;16bit.tif&apos;) 使用matlab也可以正">
+<meta name="twitter:description" content="最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。 安装： 1pip install imageio 使用： 12345from imageio import imread, imsaveimport numpy as npimg = imread(&apos;pic.tif&apos;).astype(np.uint16)imsave(&apos;16bit.tif&apos;) 使用matlab也可以正">
   
     <link rel="alternative" href="/atom.xml" title="Aias&#39;s Depot" type="application/atom+xml">
   
@@ -37,6 +38,8 @@
 
   
 
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
 </head>
 </html>
 <body>
@@ -175,11 +178,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。  </p>
-<p>安装：<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install imageio</span><br></pre></td></tr></table></figure></p>
-<p>使用：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> imageio <span class="keyword">import</span> imread, imsave</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = imread(<span class="string">'pic.tif'</span>).astype(np.uint16)</span><br><span class="line">imsave(<span class="string">'16bit.tif'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>使用matlab也可以正常读取存储的10bit图片，但是matlab显示10bit图片一直有些bug就是了。<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">img = imread(<span class="string">'16bit.tif'</span>)</span><br><span class="line">imshow(doule(img)/<span class="number">1023</span>, [])</span><br></pre></td></tr></table></figure></p>
-
+        <p>最近遇到存储10位图片的问题，最后发现用imageio库可以很好地解决这个问题。</p>
+<p>安装：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install imageio</span><br></pre></td></tr></table></figure>
+<p>使用：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> imageio <span class="keyword">import</span> imread, imsave</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = imread(<span class="string">'pic.tif'</span>).astype(np.uint16)</span><br><span class="line">imsave(<span class="string">'16bit.tif'</span>)</span><br></pre></td></tr></table></figure>
+<p>使用matlab也可以正常读取存储的10bit图片，但是matlab显示10bit图片一直有些bug就是了。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">img = imread(<span class="string">'16bit.tif'</span>)</span><br><span class="line">imshow(doule(img)/<span class="number">1023</span>, [])</span><br></pre></td></tr></table></figure>
       
 
       
@@ -298,6 +303,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/04/12/testmath/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          testmath
+        
+      </div>
+    </a>
   
   
     <a href="/2019/04/06/Hello, world!/" id="article-nav-older" class="article-nav-link-wrap">
