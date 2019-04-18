@@ -975,7 +975,7 @@ body {
 }
 
 .article-entry code, .article-entry pre {
-	font-family: Source Code Pro, Consolas, Monaco, Menlo, monospace
+	font-family: YaHei Consolas Hybrid, Consolas, Source Code Pro, Monaco, monospace
 }
 
 .article-entry code {
@@ -1055,7 +1055,7 @@ body {
 
 .article-entry .gist .gist-file {
 	border: none;
-	font-family: Source Code Pro, Consolas, Monaco, Menlo, monospace;
+	font-family: YaHei Consolas Hybrid, Source Code Pro, Consolas, Monaco, monospace;
 	margin: 0
 }
 
@@ -1148,7 +1148,7 @@ pre .css~* .id, pre .id {
 	position: relative;
 	border-radius: 0 5px 5px 0;
 	margin: 5px 9px 5px 8px;
-	font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace
+	font-family: Lato, Microsoft Yahei, lucida console, Courier New, monospace
 }
 
 .tagcloud a:hover {
@@ -2152,7 +2152,7 @@ pre .css~* .id, pre .id {
 	margin: 0 3px;
 	background: #ddd;
 	border: 1px solid #ccc;
-	font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
+	font-family: YaHei Consolas Hybrid, Monaco, Andale Mono, lucida console, Courier New, monospace;
 	word-wrap: break-word;
 	font-size: 14px
 }

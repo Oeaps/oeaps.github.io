@@ -9,18 +9,18 @@
 
   <title>用Python读取和保存16bit图片 | Aias&#39;s Depot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x9047;&amp;#x5230;&amp;#x5B58;&amp;#x50A8;10&amp;#x4F4D;&amp;#x56FE;&amp;#x7247;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x53D1;&amp;#x73B0;&amp;#x7528;imageio&amp;#x5E93;&amp;#x53EF;&amp;#x4EE5;&amp;#x5F88;&amp;#x597D;&amp;#x5730">
+  <meta name="description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x9047;&amp;#x5230;&amp;#x5B58;&amp;#x50A8;10&amp;#x4F4D;&amp;#x56FE;&amp;#x7247;&amp;#xFF08;&amp;#x4E5F;&amp;#x5C31;&amp;#x662F;16&amp;#x4F4D;&amp;#x4E86;&amp;#xFF09;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x53D1;&amp;#x73B0;&amp;#x7">
 <meta name="keywords" content="Python,imageio,10bit,16bit,MATLAB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Python读取和保存16bit图片">
 <meta property="og:url" content="http://Oeaps.github.com/2019/04/06/用Python读取和保存16bit图片/index.html">
 <meta property="og:site_name" content="Aias&#39;s Depot">
-<meta property="og:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x9047;&amp;#x5230;&amp;#x5B58;&amp;#x50A8;10&amp;#x4F4D;&amp;#x56FE;&amp;#x7247;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x53D1;&amp;#x73B0;&amp;#x7528;imageio&amp;#x5E93;&amp;#x53EF;&amp;#x4EE5;&amp;#x5F88;&amp;#x597D;&amp;#x5730">
+<meta property="og:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x9047;&amp;#x5230;&amp;#x5B58;&amp;#x50A8;10&amp;#x4F4D;&amp;#x56FE;&amp;#x7247;&amp;#xFF08;&amp;#x4E5F;&amp;#x5C31;&amp;#x662F;16&amp;#x4F4D;&amp;#x4E86;&amp;#xFF09;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x53D1;&amp;#x73B0;&amp;#x7">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-05T18:51:12.923Z">
+<meta property="og:updated_time" content="2019-04-18T05:14:52.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Python读取和保存16bit图片">
-<meta name="twitter:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x9047;&amp;#x5230;&amp;#x5B58;&amp;#x50A8;10&amp;#x4F4D;&amp;#x56FE;&amp;#x7247;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x53D1;&amp;#x73B0;&amp;#x7528;imageio&amp;#x5E93;&amp;#x53EF;&amp;#x4EE5;&amp;#x5F88;&amp;#x597D;&amp;#x5730">
+<meta name="twitter:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x9047;&amp;#x5230;&amp;#x5B58;&amp;#x50A8;10&amp;#x4F4D;&amp;#x56FE;&amp;#x7247;&amp;#xFF08;&amp;#x4E5F;&amp;#x5C31;&amp;#x662F;16&amp;#x4F4D;&amp;#x4E86;&amp;#xFF09;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6700;&amp;#x540E;&amp;#x53D1;&amp;#x73B0;&amp;#x7">
   
     <link rel="alternative" href="/atom.xml" title="Aias&#39;s Depot" type="application/atom+xml">
   
@@ -163,12 +163,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&#x6700;&#x8FD1;&#x9047;&#x5230;&#x5B58;&#x50A8;10&#x4F4D;&#x56FE;&#x7247;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x540E;&#x53D1;&#x73B0;&#x7528;imageio&#x5E93;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+        <p>&#x6700;&#x8FD1;&#x9047;&#x5230;&#x5B58;&#x50A8;10&#x4F4D;&#x56FE;&#x7247;&#xFF08;&#x4E5F;&#x5C31;&#x662F;16&#x4F4D;&#x4E86;&#xFF09;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x540E;&#x53D1;&#x73B0;&#x7528;imageio&#x5E93;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
 <p>&#x5B89;&#x88C5;&#xFF1A;<br>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install imageio</span><br></pre></td></tr></table></figure></p>
 <p>&#x4F7F;&#x7528;&#xFF1A;<br>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> imageio <span class="keyword">import</span> imread, imsave</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = imread(<span class="string">&apos;pic.tif&apos;</span>).astype(np.uint16)</span><br><span class="line">imsave(<span class="string">&apos;16bit.tif&apos;</span>)</span><br></pre></td></tr></table></figure></p>
-<p>&#x4F7F;&#x7528;matlab&#x4E5F;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x8BFB;&#x53D6;&#x5B58;&#x50A8;&#x7684;10bit&#x56FE;&#x7247;&#xFF0C;&#x4F46;&#x662F;matlab&#x663E;&#x793A;10bit&#x56FE;&#x7247;&#x4E00;&#x76F4;&#x6709;&#x4E9B;bug&#x5C31;&#x662F;&#x4E86;&#x3002; <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">img = imread(<span class="string">&apos;16bit.tif&apos;</span>)</span><br><span class="line">imshow(doule(img)/<span class="number">1023</span>, [])</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> imageio <span class="keyword">import</span> imread, imsave</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = imread(<span class="string">&apos;pic.tif&apos;</span>).astype(np.uint16)</span><br><span class="line">imsave(<span class="string">&apos;10bit.tif&apos;</span>)</span><br></pre></td></tr></table></figure></p>
+<p>&#x4F7F;&#x7528;matlab&#x4E5F;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x8BFB;&#x53D6;&#x5B58;&#x50A8;&#x7684;10bit&#x56FE;&#x7247;&#xFF0C;&#x4F46;&#x662F;matlab&#x5B58;&#x50A8;&#x548C;&#x663E;&#x793A;16bit&#x56FE;&#x7247;&#x6548;&#x7387;&#x5F88;&#x4F4E;&#x5C31;&#x662F;&#x4E86;&#x3002; <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">img = imread(<span class="string">&apos;10bit.tif&apos;</span>);</span><br><span class="line">imshow(doule(img)/<span class="number">1023</span>, []);</span><br><span class="line">imwrite(img, <span class="string">&apos;matlab10bit.png&apos;</span>);</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -449,27 +449,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">10bit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">16bit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
+                <a href="javascript:void(0)" class="js-tag color3">Gitment</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -489,11 +477,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Gitment</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
+                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">10bit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">16bit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
               </li>
             
             <div class="clearfix"></div>
