@@ -140,6 +140,103 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-给Hexo站点添加图片和评论功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/18/给Hexo站点添加图片和评论功能/">给Hexo站点添加图片和评论功能</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/18/给Hexo站点添加图片和评论功能/" class="archive-article-date">
+  	<time datetime="2019-04-18T03:19:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="&#x6DFB;&#x52A0;&#x8BC4;&#x8BBA;&#x652F;&#x6301;">1. &#x6DFB;&#x52A0;&#x8BC4;&#x8BBA;&#x652F;&#x6301;</h3>
+<p>&#x9996;&#x5148;&#x6765;&#x6DFB;&#x52A0;&#x8BC4;&#x8BBA;&#x529F;&#x80FD;&#xFF0C;&#x6211;&#x51B3;&#x5B9A;&#x7528;Gitment&#x3002;<br>
+Gitment&#x901A;&#x8FC7;Github&#x7684;issue&#x6765;&#x5B58;&#x50A8;&#x8BC4;&#x8BBA;&#xFF0C;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x5341;&#x5206;&#x9E21;&#x6C41;&#x4E86;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x5728;Github&#x4E0A;&#x7533;&#x8BF7;&#x65B0;&#x5E94;&#x7528;&#xFF1A;https://github.com/settings/applications/new<br>
+&#x8981;&#x586B;&#x5199;&#x7684;&#x4FE1;&#x606F;&#xFF1A; Application name: &#x968F;&#x4FBF;&#x6765;&#x4E00;&#x4E2A;<br>
+Homepage URL: &#x53EF;&#x4EE5;&#x586B;https://<em>oeaps</em>.github.io (&#x628A;&#x57DF;&#x540D;&#x6362;&#x6210;&#x81EA;&#x5DF1;&#x7684;)<br>
+Authorization callback URL: &#x548C;&#x4E0A;&#x9762;&#x4E00;&#x6837;</p>
+<p>&#x7136;&#x540E;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;Client ID&#x548C;&#x4E00;&#x4E2A;Client Secret&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x63A5;&#x4E0B;&#x6765;&#x8981;&#x7528;&#x3002;</p>
+<p>&#x6211;&#x7528;&#x7684;Yilia&#x4E3B;&#x9898;&#xFF0C;&#x81EA;&#x5E26;Gitment&#x652F;&#x6301;&#xFF0C;&#x6D41;&#x884C;&#x7684;Next&#x4E4B;&#x7C7B;&#x7684;&#x4E3B;&#x9898;&#x4E5F;&#x652F;&#x6301;&#x3002;<br>
+&#x63A5;&#x4E0B;&#x6765;&#x4FEE;&#x6539;<strong>&#x4E3B;&#x9898;</strong>&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>themes/yilia/_config.yml</code><br>
+&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x627E;&#x5230;&#x914D;&#x7F6E;Gitment&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x793A;&#x4F8B;&#x683C;&#x5F0F;&#x586B;&#x5199;&#x5C31;&#x884C;&#x4E86;&#x3002; <img src="/2019/04/18/&#x7ED9;Hexo&#x7AD9;&#x70B9;&#x6DFB;&#x52A0;&#x56FE;&#x7247;&#x548C;&#x8BC4;&#x8BBA;&#x529F;&#x80FD;/yilia_gitment_config.jpg" alt="Yilia Gitment Config"></p>
+<h3 id="&#x6DFB;&#x52A0;&#x56FE;&#x7247;&#x652F;&#x6301;">2. &#x6DFB;&#x52A0;&#x56FE;&#x7247;&#x652F;&#x6301;</h3>
+<p>&#x9996;&#x5148;&#x5728;Hexo&#x535A;&#x5BA2;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7528;bash&#x6267;&#x884C; <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></p>
+<p>&#x7136;&#x540E;&#x4FEE;&#x6539;Hexo&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>_config.yml</code>&#xFF0C;&#x5C06;<code>post_asset_folder</code>&#x8BBE;&#x4E3A;<code>true</code> <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x8FD9;&#x6837;&#x6BCF;&#x6B21;&#x7528;<code>hexo new title</code>&#x751F;&#x6210;&#x6587;&#x7AE0;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x540C;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x6587;&#x7AE0;&#x91CC;&#x8981;&#x5F15;&#x7528;&#x7684;&#x56FE;&#x7247;&#x653E;&#x8FDB;&#x53BB;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x7F16;&#x5199;Markdown&#x65F6;&#x7528;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x6587;&#x4EF6;&#x540D;&#x5373;&#x53EF;&#xFF1A; <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Alt Text</span>](<span class="link">filename.jpg</span>)</span><br></pre></td></tr></table></figure></p>
+<p>&#x5F53;&#x7136;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x4E0D;&#x597D;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#xFF0C;&#x7F16;&#x5199;markdown&#x65F6;&#x65E0;&#x6CD5;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x91CC;&#x770B;&#x5230;&#x5B9E;&#x65F6;&#x9884;&#x89C8;&#x5C31;&#x662F;&#x4E86;&#x3002;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Gitment</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/18/给Hexo站点添加图片和评论功能/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-在Hexo上用KaTeX渲染LaTeX公式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -440,7 +537,7 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -502,6 +599,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">10bit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">16bit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -522,23 +639,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color3">Gitment</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">10bit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">16bit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
+                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
               </li>
             
             <div class="clearfix"></div>
@@ -590,7 +695,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://ylwitan.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>ywt</a>
+              <a href="https://ylwitan.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>ywt-blog</a>
             </li>
           
         </ul>
