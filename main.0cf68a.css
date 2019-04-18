@@ -2256,7 +2256,6 @@ pre .css~* .id, pre .id {
 	color: #657b83;
 	border: 1px solid #ccc;
 	text-shadow: 0 1px #444;
-	font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace
 }
 
 .article-entry pre code {
@@ -2872,7 +2871,6 @@ pre .css~* .id, pre .id {
 
 #footer {
 	font-size: 12px;
-	font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
 	text-shadow: 0 1px #fff;
 	position: absolute;
 	bottom: 30px;
