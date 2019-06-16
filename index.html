@@ -140,6 +140,263 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/16/Python笔记/">Python笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2019/06/16/Python笔记/" class="archive-article-date">
+  	<time datetime="2019-06-16T12:44:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#x4E3B;&#x8981;&#x8BB0;&#x5F55;&#x4E00;&#x4E0B;Python&#x7F16;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x76F4;&#x89C9;&#x4E0A;&#x60F3;&#x4E0D;&#x51FA;&#x6765;&#x7684;&#x7B80;&#x5355;&#x5199;&#x6CD5;&#xFF0C;&#x4E0D;&#x5B9A;&#x65F6;&#x66F4;&#x65B0;&#x3002;</p>
+<ol type="1">
+<li>&#x627E;&#x5230;&#x53EF;&#x8FED;&#x4EE3;&#x5143;&#x7D20;&#x91CC;&#x7B2C;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x9879;&#x76EE;&#xFF08;<a href="https://stackoverflow.com/questions/2361426/get-the-first-item-from-an-iterable-that-matches-a-condition" target="_blank" rel="noopener">StackOverflow</a>&#xFF09; <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">next(x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x &gt; <span class="number">3</span>)</span><br><span class="line"><span class="comment"># &#x6216;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x5199;&#x6210;</span></span><br><span class="line">(x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x &gt; <span class="number">3</span>).next()</span><br><span class="line"><span class="comment"># &#x4E3A;&#x9632;&#x6B62;&#x6CA1;&#x6709;&#x5143;&#x7D20;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x65F6;&#x5F15;&#x53D1;&#x5F02;&#x5E38;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6BD4;&#x5982;Null</span></span><br><span class="line">next((x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x&gt;<span class="number">3</span>), default_value)</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/06/16/Python笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Julia切换到镜像源和安装常用包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/31/Julia切换到镜像源和安装常用包/">Julia切换到镜像源和安装常用包</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/31/Julia切换到镜像源和安装常用包/" class="archive-article-date">
+  	<time datetime="2019-05-31T03:36:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#x77E5;&#x9053;Julia&#x5F88;&#x4E45;&#x4E86;&#xFF0C;&#x6700;&#x8FD1;&#x60F3;&#x5B66;&#x4E00;&#x4E0B;&#xFF0C;&#x90A3;&#x4E48;&#x7B2C;&#x4E00;&#x6B65;&#x5F53;&#x7136;&#x662F;#&#x73AF;&#x5883;&#x642D;&#x5EFA;#&#x4E86;&#x3002;<br>
+&#x5B89;&#x88C5;Julia&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x51E0;&#x4E4E;&#x5404;&#x5E73;&#x53F0;&#x90FD;&#x6709;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x3002;<br>
+&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;Julia Pro&#xFF0C;&#x5C31;&#x50CF;Anaconda&#x4E00;&#x6837;&#xFF0C;&#x4F1A;&#x5305;&#x542B;&#x5E38;&#x7528;&#x5305;&#x548C;&#x57FA;&#x4E8E;Atom&#x7684;IDE Juno&#xFF0C;&#x662F;&#x514D;&#x8D39;&#x7684;&#xFF0C;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x5728;Julia Pro&#x7684;&#x5B98;&#x7F51;&#x4E0A;&#x6CE8;&#x518C;&#x4E00;&#x4E0B;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF1A;<br>
+<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@time</span> [x|&gt;sin <span class="keyword">for</span> x <span class="keyword">in</span> <span class="number">1</span>:<span class="number">5</span>]</span><br><span class="line"><span class="comment"># =&gt; 0.037221 seconds (53.10 k allocations: 2.680 MiB)</span></span><br><span class="line"><span class="comment">#  5-element Array{Float64,1}:</span></span><br><span class="line"><span class="comment">#    0.8414709848078965</span></span><br><span class="line"><span class="comment">#    0.9092974268256817</span></span><br><span class="line"><span class="comment">#    0.1411200080598672</span></span><br><span class="line"><span class="comment">#   -0.7568024953079282</span></span><br><span class="line"><span class="comment">#   -0.9589242746631385</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;Julia&#x7684;&#x8BED;&#x6CD5;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x5F88;&#x9A9A;&#x4E86;&#xFF0C;&#x540C;&#x65F6;&#x7ED3;&#x5408;&#x4E86;MATLAB&#x548C;Python&#x7684;&#x4F18;&#x70B9;&#x3002;&#xFF08;&#x7B49;&#x4EF7;&#x5199;&#x6CD5;&#x662F;<code>sin.(1:5)</code>&#xFF0C;&#x548C;MATLAB&#x5F88;&#x50CF;&#xFF09;</p>
+<p>&#x5B89;&#x88C5;&#x597D;&#x540E;&#x5F53;&#x7136;&#x662F;&#x88C5;&#x5404;&#x79CD;&#x5305;&#x4E86;&#xFF0C;Julia&#x7684;&#x5B98;&#x65B9;&#x6E90;&#x5012;&#x662F;&#x4E0D;&#x6162;&#xFF0C;&#x4E0D;&#x8FC7;&#x7531;&#x4E8E;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7684;&#x539F;&#x56E0;&#x8FD8;&#x662F;&#x5148;&#x6362;&#x6210;&#x56FD;&#x5185;&#x7684;&#x955C;&#x50CF;&#x5427;&#x3002;<br>
+&#x7136;&#x540E;&#x6309;<code>]</code>&#x8FDB;&#x5165;&#x5305;&#x7BA1;&#x7406;&#x5668;&#xFF08;&#x9000;&#x683C;&#x9000;&#x51FA;&#xFF09;&#xFF0C;&#x7136;&#x540E;<code>add PkgMirrors</code>&#xFF0C;&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#xFF1A; <figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> Pkg</span><br><span class="line">Pkg.add(<span class="string">&quot;PkgMirrors&quot;</span>)</span><br><span class="line"><span class="keyword">using</span> PkgMirrors</span><br><span class="line">PkgMirrors.sermirror(<span class="string">&quot;ZJU&quot;</span>)</span><br></pre></td></tr></table></figure></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x4F60;&#x7528;&#x5305;&#x7BA1;&#x7406;&#x5668;<code>add</code>&#x6216;&#x8005;<code>Pkg.add</code>&#x65F6;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x4F7F;&#x7528;&#x955C;&#x50CF;&#x4E86;&#x3002;<br>
+&#x4E0D;&#x8FC7;Julia&#x6BCF;&#x6B21;&#x9000;&#x51FA;&#x90FD;&#x4F1A;&#x53CD;&#x6FC0;&#x6D3B;&#x5305;&#x955C;&#x50CF;&#xFF0C;&#x6240;&#x4EE5;&#x4E0B;&#x6B21;&#x60F3;&#x7528;&#x955C;&#x50CF;&#x5B89;&#x88C5;&#x5305;&#x8FD8;&#x5F97;&#x518D;&#x8FD0;&#x884C;&#x4E00;&#x4E0B;<code>using PkgMirrors</code>&#xFF0C;&#x4E0D;&#x8FC7;&#x4E0D;&#x7528;&#x518D;&#x8BBE;&#x7F6E;&#x955C;&#x50CF;&#x5730;&#x5740;&#x4E86;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x5305;&#xFF08;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x9700;&#x8981;&#x597D;&#x957F;&#x4E00;&#x4F1A;&#x513F;&#xFF0C;&#x6240;&#x4EE5;&#x7B49;&#x7528;&#x5230;&#x65F6;&#x518D;&#x88C5;&#x4E5F;&#x53EF;&#x4EE5;&#xFF09;&#xFF1A; <figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> Pkg</span><br><span class="line">Pkg.add(<span class="string">&quot;Plots&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;IJulia&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;Images&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;ImageView&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;ImageMagick&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;Distributions&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;Distances&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;DataFrames&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;CSV&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;JSON&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;Gadfly&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;ECharts&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;VegaLite&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;TensorFlow&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;Flux&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;ScikitLearn&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;DecisionTree&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;Boltzmann&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;BayesNets&quot;</span>)</span><br><span class="line">Pkg.add(<span class="string">&quot;HDF5&quot;</span>)</span><br><span class="line"><span class="keyword">using</span> Images,IJulia,ImageView,ImageMagick</span><br><span class="line"><span class="keyword">using</span> Plots,Distributions,Distances,DataFrames</span><br><span class="line"><span class="keyword">using</span> CSV,JSON,Gadfly,ECharts,VegaLite</span><br><span class="line"><span class="keyword">using</span> TensorFlow,Flux,ScikitLearn</span><br><span class="line"><span class="keyword">using</span> DecisionTree,Boltzmann,BayesNets</span><br></pre></td></tr></table></figure></p>
+<p>Julia&#x76EE;&#x524D;&#x7684;&#x8BBE;&#x8BA1;&#x8FD8;&#x662F;&#x6709;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x867D;&#x7136;JIT&#x7684;&#x7F16;&#x8BD1;&#x8BA9;&#x5B83;&#x5904;&#x7406;&#x5927;&#x6570;&#x636E;&#x96C6;&#x65F6;&#x6548;&#x7387;&#x5F88;&#x9AD8;&#xFF0C;&#x53EF;&#x662F;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x5DE5;&#x4F5C;&#x6765;&#x8BF4;&#x5C31;&#x663E;&#x5F97;&#x6709;&#x4E9B;&#x6162;&#x4E86;&#xFF0C;&#x5B89;&#x88C5;&#x5305;&#x65F6;&#x5F88;&#x6162;&#xFF0C;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x5305;&#x65F6;&#x9884;&#x7F16;&#x8BD1;&#x5F88;&#x6162;&#xFF0C;&#x6BCF;&#x6B21;&#x6253;&#x5F00;Julia&#x540E;&#x7B2C;&#x4E00;&#x5904;&#x4F7F;&#x7528;&#x5305;&#x65F6;&#x4E5F;&#x5F88;&#x6162;&#xFF0C;&#x6BD4;&#x5982;&#x7B2C;&#x4E00;&#x6B21;plot&#x65F6;&#x6162;&#x5F97;&#x4EE4;&#x4EBA;&#x53D1;&#x6307;&#x3002;<br>
+&#x603B;&#x4F53;&#x6765;&#x8BF4;&#x5E93;&#x8FD8;&#x662F;&#x4E0D;&#x591F;&#x5B8C;&#x6574;&#xFF0C;&#x5404;&#x79CD;&#x7F51;&#x4E0A;&#x4ECB;&#x7ECD;&#x7684;&#x5305;&#x6211;&#x8BD5;&#x56FE;add&#x65F6;&#x4F1A;&#x53D1;&#x73B0;&#x5404;&#x79CD;&#x7248;&#x672C;&#x4E0D;&#x517C;&#x5BB9;&#xFF0C;&#x8981;&#x662F;&#x6709;numjl&#x548C;jltorch&#x5C31;&#x5F88;&#x68D2;&#x4E86;&#x3002;<br>
+&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x505A;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x4F5C;&#x4E5F;&#x8FDD;&#x53CD;&#x4E86;&#x76F4;&#x89C9;&#x3002;<br>
+&#x4F46;&#x603B;&#x4F53;&#x8FD8;&#x662F;&#x633A;&#x4E0D;&#x9519;&#x7684;&#xFF0C;&#x5E0C;&#x671B;1.2&#x53D1;&#x5E03;&#x540E;&#x8BED;&#x8A00;&#x7279;&#x6027;&#x80FD;&#x8DB3;&#x591F;&#x7A33;&#x5B9A;&#x3002;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Julia</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">环境搭建</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/31/Julia切换到镜像源和安装常用包/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-在Jetson-Nano上安装Pytorch、Tensorflow和Caffe" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/30/在Jetson-Nano上安装Pytorch、Tensorflow和Caffe/">在Jetson Nano上安装PyTorch、Tensorflow、Caffe和TensorRT</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/30/在Jetson-Nano上安装Pytorch、Tensorflow和Caffe/" class="archive-article-date">
+  	<time datetime="2019-05-30T09:42:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="&#x5B89;&#x88C5;pytorch&#x548C;tensorflow">&#x5B89;&#x88C5;Pytorch&#x548C;Tensorflow</h3>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x57FA;&#x672C;&#x6CA1;&#x6709;&#x96BE;&#x5EA6;&#xFF0C;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;Wheel&#xFF0C;&#x7528;pip&#x5B89;&#x88C5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;<br>
+&#x6309;&#x7167;&#x5B98;&#x65B9;&#x7ED9;&#x7684;&#x6570;&#x636E;&#x5C0F;&#x677F;&#x5B50;&#x7684;&#x6027;&#x80FD;&#x5E94;&#x8BE5;&#x8FD8;&#x51D1;&#x5408;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B9E;&#x9645;&#x8DD1;&#x4E86;&#x4E0B;PyTorch&#x53D1;&#x73B0;&#x5F88;&#x6162;&#xFF0C;&#x542C;&#x8BF4;&#x8981;&#x7528;TensorRT&#x52A0;&#x901F;&#x624D;&#x884C;&#x3002;<br>
+&#x9002;&#x914D;Jetson Nano&#x7684;DeepStream&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x5E03;&#xFF0C;&#x770B;&#x5B98;&#x65B9;&#x7684;&#x6F14;&#x793A;&#x89C6;&#x9891;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BF9;8&#x8DEF;&#x5168;&#x9AD8;&#x6E05;&#x89C6;&#x9891;&#x68C0;&#x6D4B;&#x7269;&#x4F53;&#xFF0C;&#x633A;&#x5389;&#x5BB3;&#x7684;&#x3002;</p>
+<h3 id="&#x5B89;&#x88C5;caffe">&#x5B89;&#x88C5;Caffe</h3>
+<p>&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x4E86;<a href="https://blog.csdn.net/beckhans/article/details/89393280" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;</a>&#xFF0C;&#x8FD9;&#x4E2A;&#x535A;&#x4E3B;&#x8BF4;&#x5F97;&#x5F88;&#x5168;&#x4E86;&#x3002;<br>
+&#x4F46;&#x662F;&#x6211;&#x5C1D;&#x8BD5;&#x5F88;&#x591A;&#x6B21;&#x540E;&#x8FD8;&#x662F;&#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5DF2;&#x7ECF;&#x653E;&#x5F03;&#x4E86;&#xFF0C;&#x6700;&#x8FD1;&#x4E0D;&#x4F1A;&#x6298;&#x817E;&#x8FD9;&#x4E2A;&#x5C0F;&#x677F;&#x5B50;&#x4E86;&#xFF0C;&#x662F;&#x4E2A;&#x6DF1;&#x5751;&#x554A;&#x3002;</p>
+<p>&#x5148;&#x542F;&#x7528;swap&#x5206;&#x533A;&#xFF0C;&#x9632;&#x6B62;&#x5185;&#x5B58;&#x4E0D;&#x8DB3; <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo swapoff /swapfile</span><br><span class="line">sudo dd <span class="keyword">if</span>=/dev/zero of=/swapfile bs=1M count=4096</span><br><span class="line">sudo mkswap /swapfile</span><br><span class="line">sudo swapon /swapfile</span><br></pre></td></tr></table></figure></p>
+<p>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#xFF0C;&#x4E0D;&#x7BA1;&#x4E4B;&#x524D;&#x6709;&#x6CA1;&#x6709;&#x90FD;&#x518D;&#x8BD5;&#x4E00;&#x4E0B;&#x5427;&#x3002; <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler -y</span><br><span class="line">sudo apt install --no-install-recommends libboost-all-dev -y</span><br><span class="line">sudo apt install libopenblas-dev liblapack-dev libatlas-base-dev -y</span><br><span class="line">sudo apt install libgflags-dev libgoogle-glog-dev liblmdb-dev -y</span><br><span class="line">sudo apt install git cmake build-essential -y</span><br></pre></td></tr></table></figure></p>
+<p>&#x5F85;&#x7EED;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">环境搭建</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Jetson Nano</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Caffe</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">TensorRT</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/30/在Jetson-Nano上安装Pytorch、Tensorflow和Caffe/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-MATLAB中imread和imwrite效率低下问题的解决方法探究" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -160,7 +417,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>MATLAB&#x91CC;imread&#x548C;imwrite&#x4F3C;&#x4E4E;&#x662F;&#x7528;Java&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x6548;&#x7387;&#x5F88;&#x4F4E;&#x3002;&#x7279;&#x522B;&#x662F;&#x8BFB;&#x5199;png&#x683C;&#x5F0F;&#x7684;&#x56FE;&#x7247;&#x65F6;&#xFF0C;&#x548C;&#x5F88;&#x591A;&#x8BED;&#x8A00;&#x4E00;&#x6837;&#xFF0C;&#x6162;&#x5F97;&#x4EE4;&#x4EBA;&#x53D1;&#x6307;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x6211;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x6709;&#x538B;&#x7F29;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x65E0;&#x635F;&#x538B;&#x7F29;&#x7684;&#x683C;&#x5F0F;&#x6765;&#x4FDD;&#x5B58;&#x6211;&#x91C7;&#x96C6;&#x5230;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E;&#x3002;&#x6700;&#x540E;&#x6211;&#x9009;&#x62E9;&#x4E86;tif&#x683C;&#x5F0F;&#xFF0C;&#x529F;&#x80FD;&#x5341;&#x5206;&#x5F3A;&#x5927;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5F88;&#x591A;&#x538B;&#x7F29;&#x65B9;&#x5F0F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;png&#x540C;&#x6B3E;&#x538B;&#x7F29;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x56FE;&#x50CF;&#x6D4F;&#x89C8;&#x5668;&#x4E5F;&#x90FD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x67E5;&#x770B;&#x3002;</p>
+<p>MATLAB&#x6709;&#x4E00;&#x4E2A;&#x8BFB;&#x5199;tif&#x6587;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x662F;C&#x8BED;&#x8A00;&#x5199;&#x7684;&#x5E93;LibTIFF&#xFF0C;&#x6548;&#x7387;&#x5F88;&#x9AD8;&#xFF0C;&#x4E4B;&#x540E;<del>&#x6709;&#x65F6;&#x95F4;</del>&#x8D34;&#x4E00;&#x4E0B;&#x5177;&#x4F53;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x53EF;&#x8C03;&#x53C2;&#x6570;&#xFF0C;<del>&#x867D;&#x7136;MATLAB&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5DF2;&#x7ECF;&#x5199;&#x5F97;&#x8D85;&#x8BE6;&#x7EC6;&#x4E86;</del>&#x3002;</p>
 
       
 
@@ -169,6 +428,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MATLAB</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">png</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">tif</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">imwrite</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">优化</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -441,7 +727,7 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
       
         <p>&#x6700;&#x8FD1;&#x9047;&#x5230;&#x5B58;&#x50A8;10&#x4F4D;&#x56FE;&#x7247;&#xFF08;&#x4E5F;&#x5C31;&#x662F;16&#x4F4D;&#x4E86;&#xFF09;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x540E;&#x53D1;&#x73B0;&#x7528;imageio&#x5E93;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
 <p>&#x5B89;&#x88C5;&#xFF1A;<br>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install imageio</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install imageio</span><br></pre></td></tr></table></figure></p>
 <p>&#x4F7F;&#x7528;&#xFF1A;<br>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> imageio <span class="keyword">import</span> imread, imsave</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = imread(<span class="string">&apos;pic.tif&apos;</span>).astype(np.uint16)</span><br><span class="line">imsave(<span class="string">&apos;10bit.tif&apos;</span>)</span><br></pre></td></tr></table></figure></p>
 <p>&#x4F7F;&#x7528;matlab&#x4E5F;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x8BFB;&#x53D6;&#x5B58;&#x50A8;&#x7684;10bit&#x56FE;&#x7247;&#xFF0C;&#x4F46;&#x662F;matlab&#x5B58;&#x50A8;&#x548C;&#x663E;&#x793A;16bit&#x56FE;&#x7247;&#x6548;&#x7387;&#x5F88;&#x4F4E;&#x5C31;&#x662F;&#x4E86;&#x3002; <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">img = imread(<span class="string">&apos;10bit.tif&apos;</span>);</span><br><span class="line">imshow(doule(img)/<span class="number">1023</span>, []);</span><br><span class="line">imwrite(img, <span class="string">&apos;matlab10bit.png&apos;</span>);</span><br></pre></td></tr></table></figure></p>
@@ -458,6 +744,10 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MATLAB</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		 
@@ -471,10 +761,6 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">16bit</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MATLAB</a>
         		</li>
       		
 		</ul>
@@ -670,6 +956,34 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Julia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">环境搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">png</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">tif</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">imwrite</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -690,14 +1004,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Gitment</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
@@ -714,7 +1020,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
+                <a href="javascript:void(0)" class="js-tag color3">Gitment</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Jetson Nano</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">PyTorch</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Caffe</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">TensorRT</a>
               </li>
             
             <div class="clearfix"></div>
