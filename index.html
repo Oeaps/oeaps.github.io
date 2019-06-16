@@ -140,6 +140,94 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-使用Jupyter-Notebook时注意模块重新加载的问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/17/使用Jupyter-Notebook时注意模块重新加载的问题/">使用Jupyter Notebook时注意模块重新加载的问题</a>
+    </h1>
+  
+
+        
+        <a href="/2019/06/17/使用Jupyter-Notebook时注意模块重新加载的问题/" class="archive-article-date">
+  	<time datetime="2019-06-16T19:42:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#x6700;&#x8FD1;&#x88AB;Python&#x548C;Jupyter Notebook&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x5751;&#x4E86;&#x597D;&#x51E0;&#x6B21;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x8BB0;&#x5F55;&#x4E00;&#x4E0B;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3002;</p>
+<p>&#x4F7F;&#x7528;Jupyter Notebook&#x65F6;&#x5982;&#x679C;&#x5BFC;&#x5165;&#x4E86;&#x5916;&#x90E8;&#x6A21;&#x5757;&#xFF0C;&#x5728;&#x4F60;&#x8BD5;&#x56FE;&#x91CD;&#x65B0;&#x5BFC;&#x5165;&#x65F6;&#xFF0C;Jupyter Notebook&#x662F;&#x4E0D;&#x4F1A;&#x7ED9;&#x4F60;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x7684;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E0D;&#x65AD;&#x5730;&#x4FEE;&#x6539;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x6A21;&#x5757;&#x5E76;&#x91CD;&#x65B0;import&#xFF0C;Jupyter Notebook&#x53EA;&#x4F1A;&#x7528;&#x4F60;&#x7B2C;&#x4E00;&#x6B21;&#x5BFC;&#x5165;&#x7684;&#x7ED3;&#x679C;&#x3002;Spyder&#x5012;&#x662F;&#x4F1A;&#x5E2E;&#x4F60;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x5E76;&#x7ED9;&#x51FA;&#x8B66;&#x544A;&#xFF0C;&#x4F46;&#x6709;&#x4E9B;IDE&#x5219;&#x4E0D;&#x4F1A;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x3002;</p>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#x91CD;&#x542F;Jupyter Notebook&#x7684;&#x5185;&#x6838;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x505A;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x3002;<br>
+&#x4F7F;&#x7528;&#x9B54;&#x6CD5;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x8BA9;&#x63A5;&#x4E0B;&#x6765;import&#x65F6;&#x81EA;&#x52A8;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#xFF0C;&#x4F46;&#x662F;&#x91CD;&#x542F;&#x5185;&#x6838;&#x540E;&#x4F1A;&#x5931;&#x6548;&#xFF1A; <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%load_ext autoreload</span><br><span class="line">%autoreload <span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x547D;&#x4EE4;&#x52A0;&#x5230;Jupyter Notebook&#x7684;&#x542F;&#x52A8;&#x547D;&#x4EE4;&#x91CC;&#xFF08;&#x6D4B;&#x8BD5;&#x540E;&#x52A0;&#x4E0A;&#xFF09;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x6A21;&#x5757;&#x5982;&#x679C;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7528;&#x67D0;&#x79CD;&#x65B9;&#x6CD5;&#x6210;&#x529F;&#x5BFC;&#x5165;&#x4E86;&#x4E00;&#x6B21;&#xFF0C;&#x90A3;&#x4E48;&#x5373;&#x4FBF;&#x4F60;&#x5728;&#x6700;&#x7EC8;&#x7684;&#x4EE3;&#x7801;&#x7248;&#x672C;&#x91CC;&#x5199;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x5BFC;&#x5165;&#x65B9;&#x6CD5;&#xFF0C;&#x7531;&#x4E8E;__pycache__&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5728;&#x4F60;&#x6D4B;&#x8BD5;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x80FD;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x4E00;&#x65E6;&#x4F60;&#x628A;&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#x5220;&#x6389;&#x6216;&#x8005;&#x5C06;&#x6587;&#x4EF6;&#x79FB;&#x52A8;&#x5230;&#x522B;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;<br>
+&#x5B9E;&#x5728;&#x662F;&#x4E0D;&#x7406;&#x89E3;Python&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Jupyter Notebook</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">IPython</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/06/17/使用Jupyter-Notebook时注意模块重新加载的问题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -254,11 +342,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Julia</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">环境搭建</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">环境搭建</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Julia</a>
         		</li>
       		
 		</ul>
@@ -298,19 +386,19 @@
 
 
   
-    <article id="post-在Jetson-Nano上安装Pytorch、Tensorflow和Caffe" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/30/在Jetson-Nano上安装Pytorch、Tensorflow和Caffe/">在Jetson Nano上安装PyTorch、Tensorflow、Caffe和TensorRT</a>
+      <a class="article-title" href="/2019/05/30/在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT/">在Jetson Nano上安装PyTorch、TensorFlow、Caffe和TensorRT</a>
     </h1>
   
 
         
-        <a href="/2019/05/30/在Jetson-Nano上安装Pytorch、Tensorflow和Caffe/" class="archive-article-date">
+        <a href="/2019/05/30/在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT/" class="archive-article-date">
   	<time datetime="2019-05-30T09:42:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
 </a>
         
@@ -318,7 +406,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="&#x5B89;&#x88C5;pytorch&#x548C;tensorflow">&#x5B89;&#x88C5;Pytorch&#x548C;Tensorflow</h3>
+        <h3 id="&#x5B89;&#x88C5;pytorch&#x548C;tensorflow">&#x5B89;&#x88C5;PyTorch&#x548C;TensorFlow</h3>
 <p>&#x8FD9;&#x4E24;&#x4E2A;&#x57FA;&#x672C;&#x6CA1;&#x6709;&#x96BE;&#x5EA6;&#xFF0C;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;Wheel&#xFF0C;&#x7528;pip&#x5B89;&#x88C5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;<br>
 &#x6309;&#x7167;&#x5B98;&#x65B9;&#x7ED9;&#x7684;&#x6570;&#x636E;&#x5C0F;&#x677F;&#x5B50;&#x7684;&#x6027;&#x80FD;&#x5E94;&#x8BE5;&#x8FD8;&#x51D1;&#x5408;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B9E;&#x9645;&#x8DD1;&#x4E86;&#x4E0B;PyTorch&#x53D1;&#x73B0;&#x5F88;&#x6162;&#xFF0C;&#x542C;&#x8BF4;&#x8981;&#x7528;TensorRT&#x52A0;&#x901F;&#x624D;&#x884C;&#x3002;<br>
 &#x9002;&#x914D;Jetson Nano&#x7684;DeepStream&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x5E03;&#xFF0C;&#x770B;&#x5B98;&#x65B9;&#x7684;&#x6F14;&#x793A;&#x89C6;&#x9891;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BF9;8&#x8DEF;&#x5168;&#x9AD8;&#x6E05;&#x89C6;&#x9891;&#x68C0;&#x6D4B;&#x7269;&#x4F53;&#xFF0C;&#x633A;&#x5389;&#x5BB3;&#x7684;&#x3002;</p>
@@ -341,10 +429,6 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">环境搭建</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Jetson Nano</a>
         		</li>
       		 
@@ -359,6 +443,10 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">TensorRT</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">环境搭建</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -367,7 +455,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/05/30/在Jetson-Nano上安装Pytorch、Tensorflow和Caffe/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/05/30/在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT/">展开全文 >></a>
         </p>
       
 
@@ -744,11 +832,11 @@ s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class=
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MATLAB</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">MATLAB</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -956,11 +1044,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Julia</a>
+                <a href="javascript:void(0)" class="js-tag color2">Jupyter Notebook</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">环境搭建</a>
+                <a href="javascript:void(0)" class="js-tag color3">IPython</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1004,7 +1096,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color2">Jetson Nano</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">PyTorch</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Caffe</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">TensorRT</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">环境搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Julia</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1025,22 +1137,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Jetson Nano</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">PyTorch</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Caffe</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">TensorRT</a>
               </li>
             
             <div class="clearfix"></div>

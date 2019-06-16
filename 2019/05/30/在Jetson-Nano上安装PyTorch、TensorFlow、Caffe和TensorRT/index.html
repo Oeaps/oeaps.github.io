@@ -7,19 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://Oeaps.github.com">
 
-  <title>Hello, world! | Aias&#39;s Depot</title>
+  <title>在Jetson Nano上安装PyTorch、TensorFlow、Caffe和TensorRT | Aias&#39;s Depot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;#x7EC8;&amp;#x4E8E;&amp;#x914D;&amp;#x7F6E;&amp;#x597D;&amp;#x4E86;Hexo&amp;#xFF0C;&amp;#x6211;&amp;#x4E4B;&amp;#x540E;&amp;#x5C06;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E9B;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x3002;">
+  <meta name="description" content="&amp;#x5B89;&amp;#x88C5;PyTorch&amp;#x548C;TensorFlow &amp;#x8FD9;&amp;#x4E24;&amp;#x4E2A;&amp;#x57FA;&amp;#x672C;&amp;#x6CA1;&amp;#x6709;&amp;#x96BE;&amp;#x5EA6;&amp;#xFF0C;&amp;#x5B98;&amp;#x65B9;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E86;Wheel&amp;#xFF0C;&amp;#x7528;pip&amp;#x5B89;&amp;#x88">
+<meta name="keywords" content="Jetson Nano,PyTorch,Caffe,TensorRT,环境搭建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello, world!">
-<meta property="og:url" content="http://Oeaps.github.com/2019/04/06/Hello, world!/index.html">
+<meta property="og:title" content="在Jetson Nano上安装PyTorch、TensorFlow、Caffe和TensorRT">
+<meta property="og:url" content="http://Oeaps.github.com/2019/05/30/在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT/index.html">
 <meta property="og:site_name" content="Aias&#39;s Depot">
-<meta property="og:description" content="&amp;#x7EC8;&amp;#x4E8E;&amp;#x914D;&amp;#x7F6E;&amp;#x597D;&amp;#x4E86;Hexo&amp;#xFF0C;&amp;#x6211;&amp;#x4E4B;&amp;#x540E;&amp;#x5C06;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E9B;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x3002;">
+<meta property="og:description" content="&amp;#x5B89;&amp;#x88C5;PyTorch&amp;#x548C;TensorFlow &amp;#x8FD9;&amp;#x4E24;&amp;#x4E2A;&amp;#x57FA;&amp;#x672C;&amp;#x6CA1;&amp;#x6709;&amp;#x96BE;&amp;#x5EA6;&amp;#xFF0C;&amp;#x5B98;&amp;#x65B9;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E86;Wheel&amp;#xFF0C;&amp;#x7528;pip&amp;#x5B89;&amp;#x88">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-05T18:51:54.884Z">
+<meta property="og:updated_time" content="2019-06-16T13:57:42.629Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello, world!">
-<meta name="twitter:description" content="&amp;#x7EC8;&amp;#x4E8E;&amp;#x914D;&amp;#x7F6E;&amp;#x597D;&amp;#x4E86;Hexo&amp;#xFF0C;&amp;#x6211;&amp;#x4E4B;&amp;#x540E;&amp;#x5C06;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E9B;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x3002;">
+<meta name="twitter:title" content="在Jetson Nano上安装PyTorch、TensorFlow、Caffe和TensorRT">
+<meta name="twitter:description" content="&amp;#x5B89;&amp;#x88C5;PyTorch&amp;#x548C;TensorFlow &amp;#x8FD9;&amp;#x4E24;&amp;#x4E2A;&amp;#x57FA;&amp;#x672C;&amp;#x6CA1;&amp;#x6709;&amp;#x96BE;&amp;#x5EA6;&amp;#xFF0C;&amp;#x5B98;&amp;#x65B9;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E86;Wheel&amp;#xFF0C;&amp;#x7528;pip&amp;#x5B89;&amp;#x88">
   
     <link rel="alternative" href="/atom.xml" title="Aias&#39;s Depot" type="application/atom+xml">
   
@@ -142,27 +143,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Hello, world!" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello, world!
+      在Jetson Nano上安装PyTorch、TensorFlow、Caffe和TensorRT
     </h1>
   
 
         
-        <a href="/2019/04/06/Hello, world!/" class="archive-article-date">
-  	<time datetime="2019-04-05T18:41:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-06</time>
+        <a href="/2019/05/30/在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT/" class="archive-article-date">
+  	<time datetime="2019-05-30T09:42:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&#x7EC8;&#x4E8E;&#x914D;&#x7F6E;&#x597D;&#x4E86;Hexo&#xFF0C;&#x6211;&#x4E4B;&#x540E;&#x5C06;&#x5728;&#x8FD9;&#x91CC;&#x8BB0;&#x5F55;&#x4E00;&#x4E9B;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+        <h3 id="&#x5B89;&#x88C5;pytorch&#x548C;tensorflow">&#x5B89;&#x88C5;PyTorch&#x548C;TensorFlow</h3>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x57FA;&#x672C;&#x6CA1;&#x6709;&#x96BE;&#x5EA6;&#xFF0C;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;Wheel&#xFF0C;&#x7528;pip&#x5B89;&#x88C5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;<br>
+&#x6309;&#x7167;&#x5B98;&#x65B9;&#x7ED9;&#x7684;&#x6570;&#x636E;&#x5C0F;&#x677F;&#x5B50;&#x7684;&#x6027;&#x80FD;&#x5E94;&#x8BE5;&#x8FD8;&#x51D1;&#x5408;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B9E;&#x9645;&#x8DD1;&#x4E86;&#x4E0B;PyTorch&#x53D1;&#x73B0;&#x5F88;&#x6162;&#xFF0C;&#x542C;&#x8BF4;&#x8981;&#x7528;TensorRT&#x52A0;&#x901F;&#x624D;&#x884C;&#x3002;<br>
+&#x9002;&#x914D;Jetson Nano&#x7684;DeepStream&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x5E03;&#xFF0C;&#x770B;&#x5B98;&#x65B9;&#x7684;&#x6F14;&#x793A;&#x89C6;&#x9891;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BF9;8&#x8DEF;&#x5168;&#x9AD8;&#x6E05;&#x89C6;&#x9891;&#x68C0;&#x6D4B;&#x7269;&#x4F53;&#xFF0C;&#x633A;&#x5389;&#x5BB3;&#x7684;&#x3002;</p>
+<h3 id="&#x5B89;&#x88C5;caffe">&#x5B89;&#x88C5;Caffe</h3>
+<p>&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x4E86;<a href="https://blog.csdn.net/beckhans/article/details/89393280" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;</a>&#xFF0C;&#x8FD9;&#x4E2A;&#x535A;&#x4E3B;&#x8BF4;&#x5F97;&#x5F88;&#x5168;&#x4E86;&#x3002;<br>
+&#x4F46;&#x662F;&#x6211;&#x5C1D;&#x8BD5;&#x5F88;&#x591A;&#x6B21;&#x540E;&#x8FD8;&#x662F;&#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5DF2;&#x7ECF;&#x653E;&#x5F03;&#x4E86;&#xFF0C;&#x6700;&#x8FD1;&#x4E0D;&#x4F1A;&#x6298;&#x817E;&#x8FD9;&#x4E2A;&#x5C0F;&#x677F;&#x5B50;&#x4E86;&#xFF0C;&#x662F;&#x4E2A;&#x6DF1;&#x5751;&#x554A;&#x3002;</p>
+<p>&#x5148;&#x542F;&#x7528;swap&#x5206;&#x533A;&#xFF0C;&#x9632;&#x6B62;&#x5185;&#x5B58;&#x4E0D;&#x8DB3; <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo swapoff /swapfile</span><br><span class="line">sudo dd <span class="keyword">if</span>=/dev/zero of=/swapfile bs=1M count=4096</span><br><span class="line">sudo mkswap /swapfile</span><br><span class="line">sudo swapon /swapfile</span><br></pre></td></tr></table></figure></p>
+<p>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#xFF0C;&#x4E0D;&#x7BA1;&#x4E4B;&#x524D;&#x6709;&#x6CA1;&#x6709;&#x90FD;&#x518D;&#x8BD5;&#x4E00;&#x4E0B;&#x5427;&#x3002; <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler -y</span><br><span class="line">sudo apt install --no-install-recommends libboost-all-dev -y</span><br><span class="line">sudo apt install libopenblas-dev liblapack-dev libatlas-base-dev -y</span><br><span class="line">sudo apt install libgflags-dev libgoogle-glog-dev liblmdb-dev -y</span><br><span class="line">sudo apt install git cmake build-essential -y</span><br></pre></td></tr></table></figure></p>
+<p>&#x5F85;&#x7EED;</p>
 
       
 
@@ -197,6 +207,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Jetson Nano</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Caffe</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">TensorRT</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">环境搭建</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -247,7 +284,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://Oeaps.github.com/2019/04/06/Hello, world!/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://Oeaps.github.com/2019/05/30/在Jetson-Nano上安装PyTorch、TensorFlow、Caffe和TensorRT/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -261,15 +298,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/06/用Python读取和保存16bit图片/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/05/31/Julia切换到镜像源和安装常用包/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          用Python读取和保存16bit图片
+          Julia切换到镜像源和安装常用包
         
       </div>
     </a>
   
+  
+    <a href="/2019/04/18/MATLAB中imread和imwrite效率低下问题的解决方法探究/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MATLAB中imread和imwrite效率低下问题的解决方法探究</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -308,7 +350,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
 <script>
 var gitment = new Gitment({
-  id: "Sat Apr 06 2019 02:41:11 GMT+0800",
+  id: "Thu May 30 2019 17:42:50 GMT+0800",
   owner: 'Oeaps',
   repo: 'oeaps.github.io',
   oauth: {
