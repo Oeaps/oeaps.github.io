@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Aias&#39;s Depot">
 <meta property="og:description" content="&amp;#x4E3B;&amp;#x8981;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E0B;Python&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x4E00;&amp;#x4E9B;&amp;#x76F4;&amp;#x89C9;&amp;#x4E0A;&amp;#x60F3;&amp;#x4E0D;&amp;#x51FA;&amp;#x6765;&amp;#x7684;&amp;#x7B80;&amp;#x5355;&amp;#">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-16T12:50:02.707Z">
+<meta property="og:updated_time" content="2019-06-22T10:52:57.728Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python笔记">
 <meta name="twitter:description" content="&amp;#x4E3B;&amp;#x8981;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E0B;Python&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x4E00;&amp;#x4E9B;&amp;#x76F4;&amp;#x89C9;&amp;#x4E0A;&amp;#x60F3;&amp;#x4E0D;&amp;#x51FA;&amp;#x6765;&amp;#x7684;&amp;#x7B80;&amp;#x5355;&amp;#">
@@ -162,10 +162,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&#x4E3B;&#x8981;&#x8BB0;&#x5F55;&#x4E00;&#x4E0B;Python&#x7F16;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x76F4;&#x89C9;&#x4E0A;&#x60F3;&#x4E0D;&#x51FA;&#x6765;&#x7684;&#x7B80;&#x5355;&#x5199;&#x6CD5;&#xFF0C;&#x4E0D;&#x5B9A;&#x65F6;&#x66F4;&#x65B0;&#x3002;</p>
-<ol type="1">
-<li>&#x627E;&#x5230;&#x53EF;&#x8FED;&#x4EE3;&#x5143;&#x7D20;&#x91CC;&#x7B2C;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x9879;&#x76EE;&#xFF08;<a href="https://stackoverflow.com/questions/2361426/get-the-first-item-from-an-iterable-that-matches-a-condition" target="_blank" rel="noopener">StackOverflow</a>&#xFF09; <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">next(x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x &gt; <span class="number">3</span>)</span><br><span class="line"><span class="comment"># &#x6216;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x5199;&#x6210;</span></span><br><span class="line">(x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x &gt; <span class="number">3</span>).next()</span><br><span class="line"><span class="comment"># &#x4E3A;&#x9632;&#x6B62;&#x6CA1;&#x6709;&#x5143;&#x7D20;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x65F6;&#x5F15;&#x53D1;&#x5F02;&#x5E38;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6BD4;&#x5982;Null</span></span><br><span class="line">next((x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x&gt;<span class="number">3</span>), default_value)</span><br></pre></td></tr></table></figure></li>
-</ol>
+        <p>&#x4E3B;&#x8981;&#x8BB0;&#x5F55;&#x4E00;&#x4E0B;Python&#x7F16;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x76F4;&#x89C9;&#x4E0A;&#x60F3;&#x4E0D;&#x51FA;&#x6765;&#x7684;&#x7B80;&#x5355;&#x5199;&#x6CD5;&#xFF0C;&#x4E0D;&#x5B9A;&#x65F6;&#x66F4;&#x65B0;&#x3002;  </p>
+<h3 id="1-&#x627E;&#x5230;&#x53EF;&#x8FED;&#x4EE3;&#x5143;&#x7D20;&#x91CC;&#x7B2C;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x9879;&#x76EE;&#xFF08;StackOverflow&#xFF09;"><a href="#1-&#x627E;&#x5230;&#x53EF;&#x8FED;&#x4EE3;&#x5143;&#x7D20;&#x91CC;&#x7B2C;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x9879;&#x76EE;&#xFF08;StackOverflow&#xFF09;" class="headerlink" title="1. &#x627E;&#x5230;&#x53EF;&#x8FED;&#x4EE3;&#x5143;&#x7D20;&#x91CC;&#x7B2C;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x9879;&#x76EE;&#xFF08;StackOverflow&#xFF09;"></a>1. &#x627E;&#x5230;&#x53EF;&#x8FED;&#x4EE3;&#x5143;&#x7D20;&#x91CC;&#x7B2C;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x7684;&#x9879;&#x76EE;&#xFF08;<a href="https://stackoverflow.com/questions/2361426/get-the-first-item-from-an-iterable-that-matches-a-condition" target="_blank" rel="noopener">StackOverflow</a>&#xFF09;</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">next(x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x &gt; <span class="number">3</span>)</span><br><span class="line"><span class="comment"># &#x4E3A;&#x9632;&#x6B62;&#x6CA1;&#x6709;&#x5143;&#x7D20;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x65F6;&#x5F15;&#x53D1;&#x5F02;&#x5E38;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6BD4;&#x5982;Null</span></span><br><span class="line">next((x <span class="keyword">for</span> x <span class="keyword">in</span> the_iterable <span class="keyword">if</span> x&gt;<span class="number">3</span>), default_value)</span><br></pre></td></tr></table></figure>
+<p>python2&#x53EF;&#x4EE5;&#x7528;<code>.next()</code>&#xFF0C;python3&#x4E2D;&#x5BF9;&#x5E94;<code>.__next__()</code>&#xFF0C;&#x4F46;&#x4E0D;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<h3 id="2-sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;"><a href="#2-sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;" class="headerlink" title="2. sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;"></a>2. sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;</h3><p>&#x6765;&#x81EA;Codewars&#x4E0A;&#x9762;&#x7684;&#x4E00;&#x9053;&#x9898;&#xFF0C;&#x5C06;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6570;&#x5B57;0&#x632A;&#x5230;&#x5217;&#x8868;&#x672B;&#x5C3E;&#xFF1A; </p>
+<blockquote>
+<p>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; move_zeros([false,<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="string">&quot;a&quot;</span>]) <span class="comment"># returns[false,1,1,2,1,3,&quot;a&quot;,0,0]</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>&#x770B;&#x4F3C;&#x4E0D;&#x96BE;&#x4F46;&#x6709;&#x4E2A;&#x5751;&#x662F;Python&#x4E2D;&#x7684;&#x5E03;&#x5C14;&#x503C;<code>Flase</code>&#x548C;<code>0</code>&#x76F8;&#x7B49;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">False</span> == <span class="number">0</span>  <span class="comment"># =&gt; True</span></span><br><span class="line">isinstance(<span class="literal">False</span>, int) <span class="comment"># =&gt; True</span></span><br><span class="line">isinstance(<span class="literal">False</span>, bool) <span class="comment"># =&gt; True</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x6211;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">move_zeros</span><span class="params">(array)</span>:</span></span><br><span class="line">    result = list(filter(<span class="keyword">lambda</span> x:isinstance(x,bool) <span class="keyword">or</span> x!=<span class="number">0</span>, array))</span><br><span class="line">    <span class="keyword">return</span> result + [<span class="number">0</span>]*(len(array)-len(result))</span><br></pre></td></tr></table></figure></p>
+<p>&#x6295;&#x7968;&#x6570;&#x6BD4;&#x8F83;&#x9AD8;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">move_zeros</span><span class="params">(array)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sorted(array, key=<span class="keyword">lambda</span> x: x==<span class="number">0</span> <span class="keyword">and</span> type(x) <span class="keyword">is</span> <span class="keyword">not</span> bool)</span><br><span class="line"><span class="comment"># &#x6216;&#x8005;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">move_zeros</span><span class="params">(array)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sorted(array, key=<span class="keyword">lambda</span> x: x == <span class="number">0</span> <span class="keyword">and</span> x <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">False</span>)</span><br></pre></td></tr></table></figure></p>
+<p>&#x4F7F;&#x7528;<code>is</code>&#x5173;&#x952E;&#x5B57;&#x6765;&#x5224;&#x65AD;&#x7C7B;&#x578B;&#xFF0C;&#x4F7F;&#x7528;<code>sorted</code>&#x51FD;&#x6570;&#x628A;0&#x632A;&#x5230;&#x5217;&#x8868;&#x672B;&#x5C3E;</p>
+<h3 id="3-&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;"><a href="#3-&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;" class="headerlink" title="3. &#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;"></a>3. &#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;</h3><p>&#x4E5F;&#x6765;&#x81EA;Codewars&#x91CC;&#x7684;&#x4E00;&#x9053;&#x9898;&#xFF0C;&#x7ED9;&#x51FA;DNA&#x4E2D;&#x4E00;&#x6761;&#x94FE;&#x7684;&#x78B1;&#x57FA;&#x5E8F;&#x5217;&#xFF0C;&#x8FD4;&#x56DE;&#x4E92;&#x8865;&#x94FE;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x7684;<code>.translate</code>&#x65B9;&#x6CD5;&#x3002;&#xFF08;<code>str.maketrans</code>&#x662F;Python3.x&#x4E2D;&#x7684;&#x65B0;&#x5199;&#x6CD5;&#xFF09;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">DNA_strand</span><span class="params">(dna)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> dna.translate(str.maketrans(<span class="string">&apos;ATCG&apos;</span>,<span class="string">&apos;TAGC&apos;</span>))</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -419,18 +427,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Jupyter Notebook</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">IPython</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
               </li>
              
@@ -471,6 +467,38 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Jupyter Notebook</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">IPython</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">10bit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">16bit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Gitment</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Jetson Nano</a>
               </li>
              
@@ -492,26 +520,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Julia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">10bit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">16bit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Gitment</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
               </li>
             
             <div class="clearfix"></div>
