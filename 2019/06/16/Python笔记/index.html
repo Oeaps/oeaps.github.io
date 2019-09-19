@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Aias&#39;s Depot">
 <meta property="og:description" content="&amp;#x4E3B;&amp;#x8981;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E0B;Python&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x4E00;&amp;#x4E9B;&amp;#x76F4;&amp;#x89C9;&amp;#x4E0A;&amp;#x60F3;&amp;#x4E0D;&amp;#x51FA;&amp;#x6765;&amp;#x7684;&amp;#x7B80;&amp;#x5355;&amp;#">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-22T17:50:56.000Z">
+<meta property="og:updated_time" content="2019-06-23T20:37:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python笔记">
 <meta name="twitter:description" content="&amp;#x4E3B;&amp;#x8981;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E0B;Python&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x4E00;&amp;#x4E9B;&amp;#x76F4;&amp;#x89C9;&amp;#x4E0A;&amp;#x60F3;&amp;#x4E0D;&amp;#x51FA;&amp;#x6765;&amp;#x7684;&amp;#x7B80;&amp;#x5355;&amp;#">
@@ -167,7 +167,7 @@
 <p>python2&#x53EF;&#x4EE5;&#x7528;<code>.next()</code>&#xFF0C;python3&#x4E2D;&#x5BF9;&#x5E94;<code>.__next__()</code>&#xFF0C;&#x4F46;&#x4E0D;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
 <h2 id="2-sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;&#xFF0C;is&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x7528;&#x6CD5;&#xFF0C;is&#x548C;-&#x7684;&#x533A;&#x522B;"><a href="#2-sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;&#xFF0C;is&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x7528;&#x6CD5;&#xFF0C;is&#x548C;-&#x7684;&#x533A;&#x522B;" class="headerlink" title="2. sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;&#xFF0C;is&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x7528;&#x6CD5;&#xFF0C;is&#x548C;==&#x7684;&#x533A;&#x522B;"></a>2. sorted&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;&#x548C;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;&#xFF0C;<code>is</code>&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x7528;&#x6CD5;&#xFF0C;<code>is</code>&#x548C;<code>==</code>&#x7684;&#x533A;&#x522B;</h2><p>&#x6765;&#x81EA;Codewars&#x4E0A;&#x9762;&#x7684;&#x4E00;&#x9053;&#x9898;&#xFF0C;&#x5C06;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6570;&#x5B57;0&#x632A;&#x5230;&#x5217;&#x8868;&#x672B;&#x5C3E;&#xFF1A; </p>
 <blockquote>
-<p>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; move_zeros([false,<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="string">&quot;a&quot;</span>]) </span><br><span class="line">&gt; <span class="comment">#  returns [false,1,1,2,1,3,&quot;a&quot;,0,0] </span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
+<p>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.<br>  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;   move_zeros([false,<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="string">&quot;a&quot;</span>]) </span><br><span class="line">&gt;   <span class="comment">#  returns [false,1,1,2,1,3,&quot;a&quot;,0,0] </span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>&#x770B;&#x4F3C;&#x4E0D;&#x96BE;&#xFF0C;&#x4F46;&#x6709;&#x4E2A;&#x5751;&#x662F;Python&#x4E2D;&#x7684;&#x5E03;&#x5C14;&#x503C;<code>Flase</code>&#x548C;<code>0</code>&#x76F8;&#x7B49;&#xFF1A;</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">False</span> == <span class="number">0</span>  <span class="comment"># =&gt; True</span></span><br><span class="line">isinstance(<span class="literal">False</span>, int)  <span class="comment"># =&gt; True</span></span><br><span class="line">isinstance(<span class="literal">False</span>, bool)  <span class="comment"># =&gt; True</span></span><br><span class="line"><span class="literal">False</span> <span class="keyword">is</span> <span class="number">0</span>  <span class="comment"># =&gt; False  # is&#x5173;&#x952E;&#x5B57;&#x76F4;&#x63A5;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x4E0D;&#x662F;&#x6307;&#x5411;&#x540C;&#x4E00;&#x5904;&#xFF0C;a is b &#x76F8;&#x5F53;&#x4E8E; id(a)==id(b)</span></span><br><span class="line">type(<span class="literal">False</span>) <span class="keyword">is</span> bool  <span class="comment"># =&gt; True</span></span><br><span class="line">type(<span class="literal">False</span>) == bool  <span class="comment"># =&gt; True</span></span><br></pre></td></tr></table></figure>
@@ -176,6 +176,16 @@
 <p>&#x6295;&#x7968;&#x6570;&#x6BD4;&#x8F83;&#x9AD8;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">move_zeros</span><span class="params">(array)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sorted(array, key=<span class="keyword">lambda</span> x: x==<span class="number">0</span> <span class="keyword">and</span> type(x) <span class="keyword">is</span> <span class="keyword">not</span> bool)</span><br><span class="line"><span class="comment"># &#x6216;&#x8005;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">move_zeros</span><span class="params">(array)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> sorted(array, key=<span class="keyword">lambda</span> x: x == <span class="number">0</span> <span class="keyword">and</span> x <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">False</span>)</span><br></pre></td></tr></table></figure></p>
 <p>&#x4F7F;&#x7528;<code>is</code>&#x5173;&#x952E;&#x5B57;&#x6765;&#x5224;&#x65AD;&#x7C7B;&#x578B;&#xFF0C;&#x4F7F;&#x7528;<code>sorted</code>&#x51FD;&#x6570;&#x628A;0&#x632A;&#x5230;&#x5217;&#x8868;&#x672B;&#x5C3E;</p>
 <h2 id="3-&#x5B57;&#x7B26;&#x5BF9;&#x5E94;&#x66FF;&#x6362;"><a href="#3-&#x5B57;&#x7B26;&#x5BF9;&#x5E94;&#x66FF;&#x6362;" class="headerlink" title="3. &#x5B57;&#x7B26;&#x5BF9;&#x5E94;&#x66FF;&#x6362;"></a>3. &#x5B57;&#x7B26;&#x5BF9;&#x5E94;&#x66FF;&#x6362;</h2><p>&#x4E5F;&#x6765;&#x81EA;Codewars&#x91CC;&#x7684;&#x4E00;&#x9053;&#x9898;&#xFF0C;&#x7ED9;&#x51FA;DNA&#x4E2D;&#x4E00;&#x6761;&#x94FE;&#x7684;&#x78B1;&#x57FA;&#x5E8F;&#x5217;&#xFF0C;&#x8981;&#x6C42;&#x8FD4;&#x56DE;&#x4E92;&#x8865;&#x94FE;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x7684;<code>.translate</code>&#x65B9;&#x6CD5;&#x3002;&#xFF08;<code>str.maketrans</code>&#x662F;Python3.x&#x4E2D;&#x7684;&#x65B0;&#x5199;&#x6CD5;&#xFF09;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">DNA_strand</span><span class="params">(dna)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> dna.translate(str.maketrans(<span class="string">&apos;ATCG&apos;</span>,<span class="string">&apos;TAGC&apos;</span>))</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-zip&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;"><a href="#4-zip&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;" class="headerlink" title="4. zip&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;"></a>4. <code>zip</code>&#x7684;&#x7279;&#x6B8A;&#x7528;&#x6CD5;</h2><p>&#x540C;&#x6837;&#x6765;&#x81EA;Codewars&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x76EE;&#x524D;&#x78B0;&#x5230;&#x7684;&#x5927;&#x5BB6;&#x65B9;&#x6CD5;&#x548C;&#x4EE3;&#x7801;&#x957F;&#x5EA6;&#x5DEE;&#x5F02;&#x6700;&#x5927;&#x7684;&#x4E00;&#x9053;&#x9898;&#x4E86;&#x3002;</p>
+<p>&#x9898;&#x76EE;&#x53D9;&#x8FF0;&#x8D77;&#x6765;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;n&#xD7;n&#x65B9;&#x9635;&#x8F93;&#x5165;&#xFF08;&#x5217;&#x8868;&#x5957;&#x5217;&#x8868;&#xFF09;&#xFF0C;&#x6309;&#x8717;&#x725B;&#x58F3;&#x87BA;&#x65CB;&#x987A;&#x5E8F;&#x8F93;&#x51FA;&#x5176;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">array = [[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],</span><br><span class="line">         [<span class="number">8</span>,<span class="number">9</span>,<span class="number">4</span>],</span><br><span class="line">         [<span class="number">7</span>,<span class="number">6</span>,<span class="number">5</span>]]</span><br><span class="line">snail(array) <span class="comment">#=&gt; [1,2,3,4,5,6,7,8,9]</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x6211;&#x91C7;&#x7528;&#x7684;&#x662F;&#x5E38;&#x89C4;&#x7684;&#x5FAA;&#x73AF;+&#x5224;&#x65AD;&#x7684;&#x601D;&#x8DEF;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">snail</span><span class="params">(array)</span>:</span></span><br><span class="line">    n, x, y, c, a = len(array[<span class="number">0</span>]), <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, []</span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>: <span class="keyword">return</span> []</span><br><span class="line">    i = n**<span class="number">2</span></span><br><span class="line">    Do = {<span class="number">1</span>: <span class="keyword">lambda</span> x,y,co: y==n<span class="number">-1</span>-co,</span><br><span class="line">          <span class="number">2</span>: <span class="keyword">lambda</span> x,y,co: x==n<span class="number">-1</span>-co,</span><br><span class="line">          <span class="number">3</span>: <span class="keyword">lambda</span> x,y,co: y==co,</span><br><span class="line">          <span class="number">0</span>: <span class="keyword">lambda</span> x,y,co: x==co}</span><br><span class="line">    Co = {<span class="number">1</span>: <span class="keyword">lambda</span> x,y: (x,y+<span class="number">1</span>),</span><br><span class="line">          <span class="number">2</span>: <span class="keyword">lambda</span> x,y: (x+<span class="number">1</span>,y),</span><br><span class="line">          <span class="number">3</span>: <span class="keyword">lambda</span> x,y: (x,y<span class="number">-1</span>),</span><br><span class="line">          <span class="number">0</span>: <span class="keyword">lambda</span> x,y: (x<span class="number">-1</span>,y)}</span><br><span class="line">    <span class="keyword">while</span> i:</span><br><span class="line">        a.append(array[x][y])</span><br><span class="line">        c += Do[c%<span class="number">4</span>](x, y, c//<span class="number">4</span>)</span><br><span class="line">        x,y = Co[c%<span class="number">4</span>](x, y)</span><br><span class="line">        i -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> a</span><br></pre></td></tr></table></figure></p>
+<p>&#x5F97;&#x7968;&#x6570;&#x6700;&#x9AD8;&#x7684;&#x7B54;&#x6848;&#xFF0C;&#x5355;&#x884C;&#xFF0C;&#x7528;(<code>zip</code>+&#x5207;&#x7247;)&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x77E9;&#x9635;+&#x9012;&#x5F52;&#xFF0C;&#x800C;&#x4E14;&#x987A;&#x4FBF;&#x89E3;&#x51B3;&#x4E86;&#x7A7A;&#x9635;&#x8F93;&#x5165;&#x7684;&#x95EE;&#x9898;&#x3002;<br>&#x867D;&#x7136;&#x6211;&#x60F3;&#x5230;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x65CB;&#x8F6C;&#x6765;&#x505A;&#x8FD9;&#x9898;&#xFF0C;&#x4F46;&#x6211;&#x53EA;&#x77E5;&#x9053;numpy&#x53EF;&#x4EE5;&#xFF0C;&#x6CA1;&#x60F3;&#x5230;python&#x6807;&#x51C6;&#x5E93;&#x4E5F;&#x80FD;&#x5B9E;&#x73B0;&#xFF08;&#x66F4;&#x6CA1;&#x60F3;&#x5230;&#x5F97;&#x7684;&#x662F;Codewars&#x662F;&#x53EF;&#x4EE5;&#x7528;numpy&#x7684;&#xFF09;&#x3002;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">snail</span><span class="params">(array)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> list(array[<span class="number">0</span>]) + snail(list(zip(*array[<span class="number">1</span>:]))[::<span class="number">-1</span>]) <span class="keyword">if</span> array <span class="keyword">else</span> []</span><br><span class="line"><span class="comment"># &#x8C03;&#x6574;&#x4E86;&#x4EE3;&#x7801;&#x4EE5;&#x8BA9;&#x5728;Python3&#x4E0B;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x4E5F;&#x6709;&#x4EBA;&#x4E0D;&#x7528;&#x9012;&#x5F52;&#xFF0C;&#x800C;&#x7528;&#x5FAA;&#x73AF;&#x505A;&#xFF0C;&#x53CD;&#x8F6C;&#x5217;&#x8868;&#x4E5F;&#x4E0D;&#x7528;&#x5207;&#x7247;&#xFF0C;&#x800C;&#x7528;&#x6807;&#x51C6;&#x65B9;&#x6CD5;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">snail</span><span class="params">(array)</span>:</span></span><br><span class="line">    a = []</span><br><span class="line">    <span class="keyword">while</span> array:</span><br><span class="line">        a.extend(list(array.pop(<span class="number">0</span>)))</span><br><span class="line">        array = list(zip(*array))</span><br><span class="line">        array.reverse()</span><br><span class="line">    <span class="keyword">return</span> a</span><br></pre></td></tr></table></figure></p>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x4E5F;&#x6709;&#x4EBA;&#x7528;&#x751F;&#x6210;&#x5668;&#x505A;&#xFF1A;<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">snake</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> x:</span><br><span class="line">        <span class="keyword">yield</span> x[<span class="number">0</span>]</span><br><span class="line">        x = list(reversed(list(zip(*x[<span class="number">1</span>:]))))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">snail</span><span class="params">(array)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> list(itertools.chain(*snake(array)))</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">snail</span><span class="params">(array)</span>:</span></span><br><span class="line">    m = []</span><br><span class="line">    array = np.array(array)</span><br><span class="line">    <span class="keyword">while</span> len(array) &gt; <span class="number">0</span>:</span><br><span class="line">        m += array[<span class="number">0</span>].tolist()</span><br><span class="line">        array = np.rot90(array[<span class="number">1</span>:])</span><br><span class="line">    <span class="keyword">return</span> m</span><br></pre></td></tr></table></figure>
+<p>&#x8FD0;&#x884C;&#x6548;&#x7387;&#x4E0A;&#xFF0C;&#x5728;&#x77E9;&#x9635;&#x89C4;&#x6A21;&#x5F88;&#x5C0F;&#x65F6;&#xFF0C;numpy&#x6BD4;&#x5176;&#x4ED6;&#x7684;&#x6162;&#x4E00;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#xFF0C;&#x5FAA;&#x73AF;&#x505A;&#x65CB;&#x8F6C;&#x7684;&#x65B9;&#x6CD5;&#x6700;&#x5FEB;&#x3002;<br>&#x800C;&#x77E9;&#x9635;&#x89C4;&#x6A21;&#x6BD4;&#x8F83;&#x5927;&#x65F6;&#xFF0C;numpy&#x6700;&#x5FEB;&#xFF0C;&#x6211;&#x5B9E;&#x73B0;&#x7684;&#x90A3;&#x79CD;&#x4E0D;&#x65CB;&#x8F6C;&#x77E9;&#x9635;&#x7684;&#x65B9;&#x6CD5;&#x548C;numpy&#x8017;&#x65F6;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#x4E0A;&#xFF0C;&#x4F46;&#x6162;&#x51E0;&#x500D;&#xFF0C;&#x5176;&#x4ED6;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#x5728;n=1000&#x65F6;&#x6162;&#x4E24;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#xFF0C;&#x968F;&#x7740;n&#x7684;&#x589E;&#x52A0;&#x5DEE;&#x8DDD;&#x4F1A;&#x53D8;&#x5F97;&#x66F4;&#x5927;&#xFF0C;&#x5FAA;&#x73AF;&#x65CB;&#x8F6C;&#x77E9;&#x9635;&#x7684;&#x6BD4;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#x7565;&#x597D;&#x4E00;&#x70B9;&#x70B9;&#xFF0C;&#x4F46;&#x6CA1;&#x591A;&#x5927;&#x5DEE;&#x522B;&#x3002;<br>&#x7EFC;&#x5408;&#x6765;&#x8BF4;&#xFF0C;&#x5728;&#x751F;&#x4EA7;&#x4E2D;&#x9047;&#x5230;&#x7C7B;&#x4F3C;&#x7684;&#x95EE;&#x9898;&#x4F7F;&#x7528;numpy&#x6700;&#x660E;&#x667A;&#x3002;</p>
+<p>&#x800C;&#x8BA9;&#x6211;&#x6BD4;&#x8F83;&#x60CA;&#x8BB6;&#x7684;&#x662F;&#xFF0C;&#x9012;&#x5F52;&#x65B9;&#x6CD5;&#x548C;&#x751F;&#x6210;&#x5668;&#x6548;&#x7387;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x53EA;&#x6BD4;&#x5FAA;&#x73AF;&#x65CB;&#x8F6C;&#x77E9;&#x9635;&#x6162;&#x4E00;&#x70B9;&#x70B9;&#x3002;</p>
+<p>&#x987A;&#x4FBF;&#x8BF4;&#x4E00;&#x53E5;&#xFF0C;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x8717;&#x725B;&#x58F3;&#x90FD;&#x662F;&#x53F3;&#x65CB;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x9898;&#x76EE;&#x4E2D;&#x7684;&#x8717;&#x725B;&#x58F3;&#x662F;&#x5DE6;&#x65CB;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x51FD;&#x6570;&#x5E94;&#x8BE5;&#x547D;&#x540D;&#x4E3A;<code>raresnail()</code></p>
 
       
 
@@ -429,6 +439,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Julia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">环境搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">MATLAB</a>
               </li>
              
@@ -449,11 +467,59 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Julia</a>
+                <a href="javascript:void(0)" class="js-tag color3">Windows</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">环境搭建</a>
+                <a href="javascript:void(0)" class="js-tag color1">Win10</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">debug</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">问题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">解决方案</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Jupyter Notebook</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">IPython</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Jetson Nano</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">PyTorch</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Caffe</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">TensorRT</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图片</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -474,42 +540,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Pandoc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Jetson Nano</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">PyTorch</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Caffe</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">TensorRT</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">imageio</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Jupyter Notebook</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">IPython</a>
               </li>
              
               <li class="article-tag-list-item">
